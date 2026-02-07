@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Waste Management System</title>
+  <link rel="stylesheet" href="new.css">
+  <script src="new.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Smart Waste Management System</h1>
+    <p>Efficient • Clean • Smart City Solution</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Keeping Cities Clean with Smart Technology</h2>
+    <p>Monitor waste bins in real-time and optimize collection routes.</p>
+  </section>
+
+  <section id="about">
+    <h2>About the Project</h2>
+    <p>
+      The Smart Waste Management System monitors waste bins and informs people
+      when the garbage truck arrives near their area.
+    </p>
+  </section>
+
+  <section id="features">
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="card">Real-time bin monitoring</div>
+      <div class="card">Truck arrival alert</div>
+      <div class="card">Cleaner environment</div>
+      <div class="card">Smart city support</div>
+    </div>
+  </section>
+
+  <section id="dashboard">
+    <h2>Bin Status Dashboard</h2>
+    <table>
+      <tr>
+        <th>Bin ID</th>
+        <th>Location</th>
+        <th>Fill Level</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>BIN-001</td>
+        <td>Main Street</td>
+        <td>90%</td>
+        <td class="status-full">Full</td>
+      </tr>
+      <tr>
+        <td>BIN-002</td>
+        <td>City Park</td>
+        <td>55%</td>
+        <td class="status-medium">Medium</td>
+      </tr>
+      <tr>
+        <td>BIN-003</td>
+        <td>Bus Station</td>
+        <td>20%</td>
+        <td class="status-low">Low</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="notification">
+    <h2>Truck Arrival Notification (Demo)</h2>
+    <div class="card notify-box">
+      <p><strong>Your Area:</strong> Main Street</p>
+      <button onclick="sendNotification()">Simulate Truck Arrival</button>
+      <p id="msg"></p>
+    </div>
+    <section id="truck">
+  <h2>Add Garbage Truck (Demo)</h2>
+
+  <div class="card" style="max-width:500px;">
+    <label>Truck ID:</label><br>
+    <input type="text" id="truckId" placeholder="TRUCK-01"><br><br>
+
+    <label>Area:</label><br>
+    <input type="text" id="truckArea" placeholder="Main Street"><br><br>
+
+    <button onclick="addTruck()">Add Truck</button>
+  </div>
+
+  <h3 style="margin-top:30px;">Active Trucks</h3>
+  <table id="truckTable">
+    <tr>
+      <th>Truck ID</th>
+      <th>Area</th>
+      <th>Status</th>
+    </tr>
+  </table>
+</section>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: smartwaste@example.com</p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Smart Waste Management System</p>
+  </footer>
+</body>
+</html>
